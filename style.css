@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.top-part {
+    display: flex;
+    justify-content: center;
+    background-image: url(image/top-banner.png);
+    background-repeat: no-repeat;
+}
+
+.orange {
+    color: orange;
+}
+
+button {
+    padding: 15px 30px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, orange, salmon);
+}
+
+button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.half-width {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.half-width img {
+    width: 80%;
+}
+
+.dream-part {
+    display: flex;
+
+    margin: 30px 0;
+}
+
+.dream-heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.experience-area {
+    margin: 50px 0;
+    background-image: url(image/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.experience-area-flex {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.experience-h4 {
+    color: orange;
+    margin: 8px 0;
+
+}
+
+.half-width-experience {
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+    box-shadow: -1px -1px 16px 2px rgb(160, 158, 158);
+    -webkit-box-shadow: -1px -1px 10px 1px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: -1px -1px 10px 1px rgba(0, 0, 0, 0.76);
+
+}
+
+#full-stack-area {
+    border-left: 7px solid;
+    border-image: linear-gradient(rgb(0, 255, 213), rgb(40, 40, 155));
+    border-image-slice: 30;
+}
+
+#baby-web-area {
+    border-left: 7px solid;
+    border-image: linear-gradient(rgb(223, 71, 223), rgb(97, 97, 204));
+    border-image-slice: 30;
+}
+
+footer p {
+    text-align: center;
+
+    margin: 50px 0;
+}
+
+/* media query */
+@media only screen and (max-width: 600px) {
+
+    .top-part,
+    .dream-part,
+    .experience-area-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dream-pic {
+        order: 2;
+    }
+
+    .dream-text {
+        order: 1;
+    }
+
+    .half-width {
+        width: 100%;
+        padding: 0;
+        margin: 30px;
+    }
+}
